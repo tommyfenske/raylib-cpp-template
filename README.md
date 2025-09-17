@@ -8,8 +8,34 @@ A small template to get started in creating your Raylib projects using C++.
 - Optional features like fullscreen support are included in comments. Uncomment the code to include them!
 - Comments with compile commands, just paste into the terminal. Instructions are also [below](#compile-and-run-instructions).
 
+## File Structure:
+```
+\-- assets
+\-- include
+    +-- example.h
+    +-- raylib.h
+    +-- raymath.h
+\-- lib
+    +-- libraylib.a
+\-- src
+    +-- example.cpp
+    +-- main.cpp
++-- README.md
+```
+### assets
+A folder to put texture and sound files for your game.
+
+### include
+Put your header files here. Raylib and Raymath are also included by default.
+
+### lib
+Unless you're adding other libraries, leave this alone!
+
+### src
+Put your .cpp files here.
+
 ## Compile and Run Instructions
-1. Navigate to the root directory in the terminal. 
+1. Navigate to the root directory of your project in the terminal. 
 2. Use the following command to compile your project:
 ```console
 gcc src/*.cpp -o project.exe -O1 -Wall -std=c++2c -lstdc++ -Wno-missing-braces -I ./include/ -L ./lib/ -lraylib -lopengl32 -lgdi32 -lwinmm
@@ -19,6 +45,6 @@ gcc src/*.cpp -o project.exe -O1 -Wall -std=c++2c -lstdc++ -Wno-missing-braces -
 ./project.exe
 ```
 
-### Roadmap:
+### Roadmap / Future Improvements:
 - Add keyboard and mouse input
 - Add game controller support
