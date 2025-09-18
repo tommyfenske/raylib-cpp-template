@@ -1,7 +1,7 @@
 #include "raylib.h"
 #include "raymath.h"
 
-#include "example.h"
+#include "example.hpp"
 
 // Compile command:
 // gcc src/*.cpp -o project.exe -O1 -Wall -std=c++2c -lstdc++ -Wno-missing-braces -I ./include/ -L ./lib/ -lraylib -lopengl32 -lgdi32 -lwinmm
@@ -50,7 +50,8 @@ void DrawGame(void)
   BeginDrawing();
     
       ClearBackground(BLACK);
-      DrawText("It works!", 20, 20, 20, WHITE);
+      DrawFPS(10, 10);
+      DrawText("It works!", 10, 40, 20, WHITE);
 
     EndDrawing();
 }

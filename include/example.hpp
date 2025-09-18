@@ -1,7 +1,5 @@
 #pragma once
 
-#define EXAMPLE_MACRO 100
-
 /** 
  * @class Example
  * @brief Example class to show how header files and class files should be organized
@@ -23,7 +21,7 @@ class Example {
         void draw();
 
         /**
-         * @brief Prints the Map's grid to console.
+         * @brief Prints the example's attributes to console.
          */
         void print();
 };
