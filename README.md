@@ -52,3 +52,14 @@ gcc src/*.cpp -o project.exe -O1 -Wall -std=c++2c -lstdc++ -Wno-missing-braces -
 - Add game controller support
 - Add compile commands for other platforms
 - Add basic sound effects and images
+
+## Credits:
+Thank you to the following resources for helping me make this template!
+
+### Raylib by Ramon Santamaria
+https://www.raylib.com
+
+### Sound Effects
+
+#### Jsfxr by Chris McCormick
+https://sfxr.me/
